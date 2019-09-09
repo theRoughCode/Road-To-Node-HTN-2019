@@ -1,0 +1,8 @@
+# Don't want users to download the humongous node_modules directory
+/node_modules
+
+# Don't want to make your private .env file public (defeats the purpose)
+.env
+
+# Don't share your private key
+serviceAccountKey.json

@@ -1,0 +1,23 @@
+{
+  "name": "road-to-node-htn-2019",
+  "version": "1.0.0",
+  "description": "Check out the slides [HERE](https://docs.google.com/presentation/d/15ODOOesk4idG0XBfJppxMChHouB0a6JypdqgOZPADoE/edit?usp=sharing)!!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theRoughCode/Road-To-Node-HTN-2019.git"
+  },
+  "author": "Raphael Koh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theRoughCode/Road-To-Node-HTN-2019/issues"
+  },
+  "homepage": "https://github.com/theRoughCode/Road-To-Node-HTN-2019#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^8.5.0"
+  }
+}
