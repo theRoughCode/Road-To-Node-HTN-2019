@@ -6,7 +6,7 @@ UsersRouter.get('/', (req, res) => res.send('Welcome to Road to Node!'));
 
 // Retrieves list of users
 // http://localhost:8080/users/list
-UsersRouter.get('/users/list', async (req, res) => {
+UsersRouter.get('/list', async (req, res) => {
   const { users, err } = await usersDB.getAllUsers();
   if (err) return res.status(400).send(err);
   return res.send(users);
@@ -14,7 +14,7 @@ UsersRouter.get('/users/list', async (req, res) => {
 
 // Creates new user
 // http://localhost:8080/users/create
-UsersRouter.post('/users/create', async (req, res) => {
+UsersRouter.post('/create', async (req, res) => {
   // Get first name, last name, and id from request body
   const { first, last, id } = req.body;
 
@@ -40,7 +40,7 @@ UsersRouter.post('/users/create', async (req, res) => {
 
 // Gets user by id
 // http://localhost:8080/users/query/peterparker
-UsersRouter.get('/users/query/:id', async (req, res) => {
+UsersRouter.get('/query/:id', async (req, res) => {
   const id = req.params.id;
 
   const { user, err } = await usersDB.getUser(id);
@@ -50,7 +50,7 @@ UsersRouter.get('/users/query/:id', async (req, res) => {
 
 // Deletes user by id
 // http://localhost:8080/users/delete/peterparker
-UsersRouter.delete('/users/delete/:id', async (req, res) => {
+UsersRouter.delete('/delete/:id', async (req, res) => {
   const id = req.params.id;
 
   try {
